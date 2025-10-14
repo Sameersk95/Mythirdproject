@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+         background-color: #fdfdfd;
+            color: #333;
+            }
+
+        header{
+            background-color: #f8f8f8;
+            padding: 15px 0;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 50px;
+             /* border: 2px solid red; */
+        }
+        li{
+           
+        }
+        a{
+            text-decoration: none;
+            font-size: 17px;
+            color: #333;
+        }
+        a:hover{
+            color:  #007bff;
+        }
+        .main{
+            background-image: url(second1.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           padding: 0 100px;
+            align-items: center;
+        }
+        .main h1{
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+            button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover{
+        background-color:  #e64a19;
+    }
+    .main-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-1{
+        display: flex;
+        gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content-part-1{
+        width: 300px;
+        margin-bottom: 40px;
+        height: auto;
+        /* border: 3px solid black; */
+        
+    }
+    .content-sub{
+        /* border: 2px solid red; */
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 10px rgb(75, 75, 75);
+    }
+    .content-sub h2{
+        margin-top: 15px;
+        color: black;
+    }
+    img{
+        width: 100%;
+        height: 250px;
+    }
+    .main2{
+        background-image: url(secondW.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .main2 ul{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+        padding: 20px;
+    }
+    .main2 h1{
+        display: flex;
+        justify-content: center;
+    }
+    .main2 img{
+        /* padding-top: 35px;
+        padding-bottom: 50px;
+        border-radius: 55px; */
+        height: 100px;
+        width: auto;
+        border-radius: 20px;
+    }
+    .main2 img:hover {
+    transform: scale(1.05);
+}
+    .main2,.main-2,.contact{
+        padding: 50px 20px;
+    }
+    .contact{
+        background-image: url(phone2.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+}
+.contact-form input, .contact-form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width: 768px) {
+    /* Navbar spacing */
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Hero section */
+    .main {
+        padding: 0 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .main p {
+        padding: 0;
+    }
+
+    .main h1 {
+        font-size: 28px;
+    }
+
+    /* Services section */
+    .content-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-part-1 {
+        width: 90%;
+    }
+
+    .content-sub {
+        margin: 20px;
+    }
+
+    /* Sponsor section */
+    .main2 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main2 img {
+        height: 80px;
+    }
+
+    /* Form spacing */
+    .contact-form {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+   <header>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Our client</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+   </header> 
+   <div class="main">
+    <h1>Welcome to online meal</h1>
+    <p style="padding-left: 100px; padding-right: 100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis laborum, reiciendis veritatis deserunt debitis eaque commodi voluptates excepturi vel repellat tempora eum culpa perspiciatis voluptate autem quo. Corporis amet nemo, recusandae in aut quas.</p>
+    <button>Click me</button>
+   </div>
+   <!-- Main part -->
+   <div class="main-2">
+        <h1>Our services</h1>
+        <div class="content-1">
+            <div class="content-part-1">
+                <div class="content-sub">
+                <img src="second2.jpg" alt="second-image">
+                <h2>Food ordering</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita delectus illo harum, sapiente perspiciatis adipisci at facere nisi et!</p>
+                </div>
+            </div>
+             <div class="content-part-1">
+                   <div class="content-sub">
+                    <img src="second3.jpg" alt="second-image">
+                    <h2>Food Catering</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita delectus illo harum, sapiente perspiciatis adipisci at facere nisi et!</p>
+                   </div>
+             </div>
+              <div class="content-part-1">
+                   <div class="content-sub">
+                    <img src="second4.jpg" alt="second-image">
+                    <h2>Bulk ordering</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita delectus illo harum, sapiente perspiciatis adipisci at facere nisi et!</p>
+                   </div>
+              </div>
+        </div>
+   </div>
+   <!-- sponsour part -->
+    <div class="main2">
+        <h1>Our Sponsour</h1>
+        <ul>
+            <li><img src="applelogo.jpg" alt="applelogo"></li>
+            <li><img src="microsoft.jpg" alt="microsoft"></li>
+        </ul>
+    </div>
+    <!-- last part -->
+     <div class="contact">
+        <h1>Contact</h1>
+       <form class="contact-form">
+  <input type="text" name="Name" placeholder="Enter your name" required />
+  <input type="number" name="Contact" placeholder="Enter your phone number" required />
+  <input type="email" name="email" placeholder="Enter your email" required />
+  <button type="submit">Submit</button>
+</form>
+
+     </div>
+     <footer style="background: #222; color: white; text-align: center; padding: 20px;">
+  © 2025 Online Meal. All rights reserved.
+</footer>
+
+</body>
+</html>
